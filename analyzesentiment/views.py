@@ -7,9 +7,3 @@ def index(request):
     #return HttpResponse("Hello, world. You're at the sentiment index.")
 
 # REST
-from restless.views import Endpoint
-
-class Hello(Endpoint):
-    def get(self, request):
-        name = request.params.get('name', 'World')
-        return {'message': 'Hello, %s!' % name}
