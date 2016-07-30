@@ -1,0 +1,486 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"home",
+				"homepage_asin〔variable〕"
+			],
+			[
+				"getmi",
+				"getMinutes〔function〕"
+			],
+			[
+				"server",
+				"serverTime〔variable〕"
+			],
+			[
+				"scrollto",
+				"scrollToBottom"
+			],
+			[
+				"Comm",
+				"CommonUtils〔argument〕"
+			],
+			[
+				"isc",
+				"isCurrentUser"
+			],
+			[
+				"messages",
+				"messagesBox"
+			],
+			[
+				"mess",
+				"messages"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hyungjun/Projects/blogsearchheroku"
+	],
+	"file_history":
+	[
+		"/Users/hyungjun/Projects/blogsearchheroku/analyzesentiment/views.py",
+		"/Users/hyungjun/Projects/blogsearch/analyzesentiment/views.py",
+		"/Users/hyungjun/Projects/blogsearch/templates/index.html",
+		"/Users/hyungjun/Projects/blogsearch/static/js/search.js",
+		"/Users/hyungjun/Projects/blogsearch/analyzesentiment/analyze.py",
+		"/Users/hyungjun/Projects/blogsearch/blogsearch/urls.py",
+		"/Users/hyungjun/Projects/blogsearch/analyzesentiment/urls.py",
+		"/Users/hyungjun/Projects/blogsearch/static/css/search.css",
+		"/Users/hyungjun/Projects/blogsearch/blogsearch/settings.py",
+		"/Users/hyungjun/Projects/Blogserach/index.html",
+		"/Users/hyungjun/Projects/blogsearch/analyzesentiment/index.html",
+		"/Users/hyungjun/Projects/Blogserach/Python/examples/jobid_feature_test_app.py",
+		"/Users/hyungjun/Projects/Blogserach/foundation-6.2.3-complete/index.html",
+		"/Users/hyungjun/Projects/Blogserach/js/brianreavis-selectize.js-f293d8b/README.md",
+		"/Users/hyungjun/Projects/Blogserach/react-tutorial-master/public/index.html",
+		"/Users/hyungjun/Projects/HeroEditorSrc/app/hero-detail.component.ts",
+		"/Users/hyungjun/Projects/HeroEditorSrc/app/hero.ts",
+		"/Users/hyungjun/Projects/HeroEditorSrc/app/app.component.ts",
+		"/Users/hyungjun/Projects/Blogserach/app/app.component.ts",
+		"/Users/hyungjun/Projects/Blogserach/blogsearch.sublime-workspace",
+		"/Users/hyungjun/Projects/HeroEditor/app/app.component.js",
+		"/Users/hyungjun/Projects/HeroEditor/app/app.component.ts",
+		"/Users/hyungjun/Projects/HeroEditorSrc/app/app.component.js",
+		"/Users/hyungjun/Projects/Blogserach/app/main.ts",
+		"/Users/hyungjun/Projects/HeroEditor/app/app.component.spec.ts",
+		"/Users/hyungjun/Projects/HeroEditor/app/main.ts",
+		"/Users/hyungjun/Projects/Blogserach/systemjs.config.js",
+		"/Users/hyungjun/Projects/Blogserach/typings.json",
+		"/Users/hyungjun/Projects/Blogserach/tsconfig.json",
+		"/Users/hyungjun/Projects/Blogserach/package.json",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/test/test_remindme.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/bin/remindmedjs_subscribe.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/bin/remindmedjs_publish.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/sftp-config.json",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/amazon_live_djs/remindme.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/bin/remindme_update_.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/bin/remindme_update.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/bin/remindmedjs.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/test.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/bin/test.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/test_remindme.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/remindmedjs.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/remindme.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/test-remindme.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/remindme-test.py",
+		"/Users/hyungjun/Projects/remindme-frontend-prototype/remindme.html",
+		"/Users/hyungjun/Projects/RetailWebsite/sftp-config.json",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-homepage.css",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive-player.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/widget/poppin-player.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-player-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-player-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/ShortVideoContentMason/mason/amazon-family/cross-app-features/va-video-list-widget.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-homepage-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-homepage.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/build/AmazonLiveMason/AmazonLiveMason-1.0/RHEL5_64/DEV.STD.PTHREAD/build/mason/amazon-family/cross-app-features/amazonlive/js/poppin-homepage-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/build/AmazonLiveMason/AmazonLiveMason-1.0/RHEL5_64/DEV.STD.PTHREAD/build/mason/amazon-family/cross-app-features/atv-homepage.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-calendar.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-calendar.css",
+		"/Users/hyungjun/Projects/RetailWebsite/src/RetailNavigationMason/mason/amazon-family/gp/navigation/remote/features/nav-swm-holiday-widget.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/RetailNavigationMason/poppin-timer.js",
+		"/Users/hyungjun/Projects/RetailWebsite/src/RetailNavigationMason/prototype.js",
+		"/Users/hyungjun/Projects/RetailWebsite/src/RetailNavigationMason/mason/amazon-family/gp/navigation/remote/features/nav-superswm-widget.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/ShortVideoContentMason/brazil-config/global/VideoAdsCoreServiceClient.cfg",
+		"/Users/hyungjun/Projects/RetailWebsite/src/ShortVideoContentMason/Config",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/Config",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/configuration/definitions/widgets/Gamma/amazon.com/atv-live-calendar/1.0.xml",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/brazil-config/container/RetailWebsite-service/AmazonLiveMason.cfg",
+		"/Users/hyungjun/Projects/RetailWebsite/src/ShortVideoContentMason/brazil-config/container/RetailWebsite-service/ShortVideoContentMason.cfg",
+		"/Users/hyungjun/Projects/RetailWebsite/src/VideoAdsAmazonLivePageController/src/controller.js",
+		"/Users/hyungjun/Projects/RetailWebsite/src/VideoAdsAmazonLivePageController/src/event-dispatcher.js",
+		"/Users/hyungjun/Projects/RetailWebsite/src/VideoAdsAmazonLivePageController/src/status-differencer.js",
+		"/Users/hyungjun/Projects/RetailWebsite/packageInfo",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-homepage.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-social-sharing-2.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-editors.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/VideoAdsAmazonLivePageController/src/status-poller.js",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-social-sharing.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-editors.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-social-sharing-2.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-social-sharing.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-editors.css",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-editors.css",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/VideoAdsAmazonLivePageController/dev_server/VideoAdsAmazonLivePageController.package.debug.js",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/widget/poppin-confetti.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/heart.js",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/widget/poppin-confetti.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-confetti-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-confetti.css",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-confetti.css",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-homepage-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-homepage_update_later.css",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-calendar-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/js/poppin-confetti-js.mi",
+		"/Users/hyungjun/Projects/RetailWebsite/apollo-overrides/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-homepage.css",
+		"/Users/hyungjun/Projects/SantanaPlatform/apollo-overrides/ShortVideoContentPageletGroup/webapps/ShortVideoContentPageletGroup/layouts/LiveChatPageletLayout.jsp",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/layouts/LiveChatPageletLayout.jsp",
+		"/Users/hyungjun/Projects/SantanaPlatform/apollo-overrides/ShortVideoContentPageletGroup/webapps/ShortVideoContentPageletGroup/WEB-INF/tags/livechat/LiveChatCss.tag",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/WEB-INF/tags/livechat/LiveChatCss.tag",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDK/src/messaging/message_class.js",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDKUI/src/messaging/message_entry_class.js",
+		"/Users/hyungjun/Projects/SantanaPlatform/apollo-overrides/ShortVideoContentPageletGroup/webapps/ShortVideoContentPageletGroup/WEB-INF/tags/livechat/LiveChatJs.tag",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/WEB-INF/tags/livechat/LiveChatJs.tag",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/PoppinChatApplication/src/chat-storage.js",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDK/src/utils/global_state.js",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/PoppinChatApplication/src/app.js",
+		"/Users/hyungjun/Projects/svc-dp/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/widget/poppin-player.mi",
+		"/Users/hyungjun/Projects/svc-dp/src/AmazonLiveMason/mason/amazon-family/cross-app-features/atv-homepage.mi",
+		"/Users/hyungjun/Projects/svc-dp/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-homepage.css",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/layouts/PlayerPageletLayout1.jsp",
+		"/Users/hyungjun/Projects/svc-dp/src/AmazonLiveMason/mason/amazon-family/cross-app-features/amazonlive/css/poppin-fonts.css",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/WEB-INF/tags/livechat/LiveChatJs.tag 1 eaa5912",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/WEB-INF/tags/livechat/LiveChatJs.tag last commit",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/WEB-INF/tags/livechat/LiveChatJs.tag 3 48a7b66",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/ShortVideoContentPageletGroup/WebContent/WEB-INF/tags/livechat/LiveChatJs.tag 2 ee4a9ad",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDK/src/utils/common.js",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDK/src/messaging/conversation_class.js",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDK/src/messaging/chatroom/chat_room_manager.js",
+		"/Users/hyungjun/Projects/CampfireJavaScriptSDK/src/messaging/conversation_manager.js",
+		"/Users/hyungjun/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/hyungjun/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/hyungjun/Library/Application Support/Sublime Text 2/Packages/User/SublimePrint.sublime-settings",
+		"/Users/hyungjun/Library/Application Support/Sublime Text 2/Packages/User/Plain text.sublime-settings",
+		"/Users/hyungjun/Projects/SantanaPlatform/sftp-config.json",
+		"/Users/hyungjun/Projects/SantanaPlatform/src/PoppinChatApplication/test/src/chat.test.js",
+		"/Users/hyungjun/Projects/PoppinChatApplication/src/events.js",
+		"/Users/hyungjun/Projects/PoppinChatApplication/src/chat-storage.js",
+		"/Users/hyungjun/Projects/PoppinChatApplication/test/src/chat.test.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"New"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"PROJECT_ROOT",
+			"DATABASES",
+			"db_from_env",
+			"dj_database_url",
+			"SELECTOR_SEARCH_BUTTON",
+			"searchBtn",
+			"restless",
+			"UrlAnalyzer",
+			"CX",
+			"STATICFILES_DIRS",
+			"ango.contrib.static",
+			"DJANGO_SETTINGS_MODULE",
+			"STATIC_ROOT",
+			"django.core.context_processors.static",
+			"STATIC_ROOT",
+			"analyzesentiment",
+			"myexample",
+			"analyzesentiment",
+			"from django.conf.urls",
+			"STATIC",
+			"STATICFILES_STORAGE",
+			"STATICFILES_FINDERS",
+			"django.contrib.staticfiles",
+			"STATIC_ROOT",
+			"patterns",
+			"TEMPLATE_CONTEXT_PROCESSORS",
+			"STATIC_ROOT",
+			"PROJECT_DIR",
+			"STATIC",
+			"STATIC_ROOT",
+			"semantria",
+			"6",
+			"ere’s your basic grid",
+			"get_homepage_asin",
+			"scheduled start time is",
+			"scheduled start time ",
+			"get_asin_edit_page",
+			"ITEMDETAIL_URL_PREFIX",
+			"get_remindme_message",
+			"requests",
+			"SUBMITCONTENT_REQUEST_URL",
+			"update_open_content_metadata",
+			"get_content_id",
+			"get_asin_edit_page",
+			"get_content_id",
+			"remindme",
+			"time",
+			"json",
+			"requests",
+			"csv",
+			"get_cookies",
+			"POPPINGET_HOMEPAGEASIN_URL",
+			"SUBSCRIBE_REQUEST_URL",
+			"PUBLISH_PW_ODIN_MATERIAL",
+			"make_publish_record",
+			"is_published",
+			"init_dynamodb",
+			"remindme.publish(",
+			"remindme.publish",
+			"PUBLISHED_FILENAME",
+			"ITEMDETAIL_URL_PREFIX",
+			"get_homepage_asin",
+			"get_scheduled_start_time",
+			"until_homepage_show",
+			"get_homepage_scheduled_start_time",
+			".content",
+			"PUBLISH_PW_ODIN_MATERIAL",
+			"undef",
+			"staticPoppinJs",
+			"<% ",
+			"<%",
+			"ASIN",
+			"asinOverride",
+			"asin",
+			"my ",
+			"weblabAjaxLoading",
+			"eblab",
+			"onVideoStart",
+			"200",
+			"social-icons",
+			"poppin-modal-video",
+			"poppin-modal-video ",
+			"socialEnabled",
+			"showsocial",
+			"override",
+			"countdown_tag",
+			"top_pos",
+			"right_pos",
+			"style=",
+			"poppin-homepage",
+			"startCountdownTimer",
+			"'image-only'",
+			"\"",
+			"top_pos",
+			"area",
+			"countdown",
+			"xp_img_tag",
+			"style",
+			"logger",
+			"image-only",
+			"shape",
+			"image-only",
+			",",
+			"<style",
+			"downloadable_video_shorts",
+			"pst",
+			"_isDST",
+			"_stdTimezoneOffset",
+			"_dst",
+			"/navbar-uti",
+			"vbar-u",
+			"disableTransparentPixel",
+			"images",
+			"images ",
+			"images",
+			"shift",
+			"getcontenthash",
+			"socialTagInBody",
+			"<%",
+			"socialTagInBodyEnabled",
+			"startCountdownTimer",
+			"_startCountdownTimer",
+			"_showCountdownTimer",
+			"hideCountdownTimer",
+			"showCountdownTimer",
+			"social-icons",
+			"perl",
+			"share"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"8",
+			"'",
+			"; my ",
+			"logger.log",
+			"New",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "blogsearchheroku.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
