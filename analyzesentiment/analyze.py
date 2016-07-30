@@ -1,4 +1,5 @@
 import indicoio
+indicoio.config.api_key = '912e0cb4f75ec4449e341d535fefa6f4'
 from bs4 import BeautifulSoup
 import nltk   
 import urllib.request
