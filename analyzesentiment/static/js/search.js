@@ -91,6 +91,8 @@ var search = function(keyword) {
         search.keyword = keyword;
     }
 
+	$('#content').html('');
+
 	var param = {
 		key: GOOGLE_SEARCH_API_KEY, 
 		cx: GOOGLE_SEARCH_CX, 

@@ -53,6 +53,7 @@ def getContent(url):
     
     logger.info('[getContent] content:')
     logger.info(tag_removed)
+    print(tag_removed)
     return tag_removed
 
 if __name__ == "__main__":
