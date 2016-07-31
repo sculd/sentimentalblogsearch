@@ -6,7 +6,7 @@ var ANALYZER_URL = '/analyzesentiment/analyzeurl/';
 // Selectors
 var SELECTOR_KEYWORD_INPUT = '#keyword';
 
-var NUM_PER_SEARCH = 8;
+var NUM_PER_SEARCH = 3;
 var page = 1;
 var isDuringUpdate = false;
 
@@ -43,7 +43,7 @@ var onSearchResponse = function(response) {
 		contentDiv.css("style", "display:none")
 		contentDiv.css("id", "contentDiv-" + i)
 		div.append(contentDiv)
-
+		
 		div.append('<p><a class="various" data-fancybox-type="iframe" href="' + item.link + '">Iframe</a></p>');
 		div.append('<p><a class="various fancybox.iframe" href="http://www.yahoo.com">yahoo</a></p>');
 		
