@@ -10,6 +10,7 @@ var NUM_PER_SEARCH = 6;
 var page = 1;
 var isDuringUpdate = false;
 var ITEM_CSS_CLASS = 'thumbnail row col-xs-10 col-xs-offset-1';
+var keyword;
 
 var onAnalyze = function(responseJSON) {
 	var getIconHtml = function(name, score) {
@@ -107,28 +108,25 @@ var onSearchResponse = function(response) {
 
 var nextPage = function() {
 	page += NUM_PER_SEARCH;
-	search(null, true);	
-}
-
-var search = function(keyword, keep) {
-    if ( typeof search.keyword == 'undefined' ) {
-        search.keyword = keyword;
-    }
-
-	if (!keep) {
-		$('#content').html('');
-	}
 
 	var param = {
 		key: GOOGLE_SEARCH_API_KEY, 
 		cx: GOOGLE_SEARCH_CX, 
-		q: 'allintext:' + search.keyword,
+		q: 'allintext:' + keyword,
 		num: NUM_PER_SEARCH,
 		start: page,
 	};
 	var res = $.get(GOOGLE_SEARCH_URL, param, onSearchResponse);
 	$('.spin').show();
-	console.log(res);
+	console.log(res);	
+}
+
+var search = function(a_keyword) {
+	keyword = a_keyword;
+
+	$('#content').html('');
+
+	nextPage();
 };
 
 $('document').ready(function(){
