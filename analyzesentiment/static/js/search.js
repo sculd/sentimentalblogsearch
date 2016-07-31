@@ -9,6 +9,7 @@ var SELECTOR_KEYWORD_INPUT = '#keyword';
 var NUM_PER_SEARCH = 3;
 var page = 1;
 var isDuringUpdate = false;
+var ITEM_CSS_CLASS = 'thumbnail row col-xs-10 col-xs-offset-1';
 
 var onSearchResponse = function(response) {
 	var i = 0;
@@ -36,18 +37,18 @@ var onSearchResponse = function(response) {
 			url: ANALYZER_URL, 
 			data: {url: item.link} // item.htmlSnippet
 		});
-		div.append('<p>' + item.htmlSnippet + '</p>' + '<p>'+JSON.stringify(res.responseJSON)+'</p>');
+		div.append('<blockquote><p>' + item.htmlSnippet + '</p></blockquote>');
+		div.append('<p>' + JSON.stringify(JSON.parse(JSON.stringify(res.responseJSON)),null,2) + '</p>');
 
 		var contentDiv = $('<div>')
-		contentDiv.load(item.link)
-		contentDiv.css("style", "display:none")
-		contentDiv.css("id", "contentDiv-" + i)
+		//var content = $.get('/analyzesentiment/urlContent?url=' + item.link)
+		//contentDiv.append(content);
 		div.append(contentDiv)
+
+		//div.append('<p><a class="various" data-fancybox-type="iframe" href="' + item.link + '">Iframe</a></p>');
+		//div.append('<p><a class="various fancybox.iframe" href="http://www.yahoo.com">yahoo</a></p>');
 		
-		div.append('<p><a class="various" data-fancybox-type="iframe" href="' + item.link + '">Iframe</a></p>');
-		div.append('<p><a class="various fancybox.iframe" href="http://www.yahoo.com">yahoo</a></p>');
-		
-		div.addClass('thumbnail');
+		div.addClass(ITEM_CSS_CLASS);
 		$('#content').append(div);
 		setTimeout(process, 0);
 

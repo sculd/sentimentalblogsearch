@@ -9,13 +9,12 @@ def index(request):
     #return HttpResponse("Hello, world. You're at the sentiment index.")
 
 # REST
+from analyzesentiment.analyze import emotion, emotionUrl, getContent
 
 class Hello(Endpoint):
     def get(self, request):
         name = request.params.get('name', 'World')
         return {'message': 'Hello, %s!' % name}
-
-from analyzesentiment.analyze import emotion, emotionUrl
 
 class TextAnalyzer(Endpoint):
     def get(self, request):
@@ -29,3 +28,8 @@ class UrlAnalyzer(Endpoint):
         res = emotionUrl(text)
         return res
 
+class UrlContent(Endpoint):
+    def get(self, request):
+        text = request.params.get('url', 'http://www.yahoo.com')
+        res = getContent(text)
+        return res

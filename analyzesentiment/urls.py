@@ -7,5 +7,5 @@ urlpatterns = [
 	url(r'^hello/$', views.Hello.as_view()),
 	url(r'^analyzetext/$', views.TextAnalyzer.as_view()),
 	url(r'^analyzeurl/$', views.UrlAnalyzer.as_view()),
+	url(r'^urlContent/$', views.UrlContent.as_view()),
 ]
-

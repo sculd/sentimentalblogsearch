@@ -4,14 +4,9 @@
 	font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
 
-#search-container {
-	text-align: center;
-}
-
 #keyword {
 	height: 1.6em;
-	width: 60%;
-	margin: 30px;
+	width: 100%;
 	font-size: 20px;
 	font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
@@ -41,4 +36,13 @@ input:-webkit-autofill:active {
 
 .thumbnail {
   
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #f5f5f5;
 }

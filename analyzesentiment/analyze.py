@@ -3,6 +3,7 @@ indicoio.config.api_key = '912e0cb4f75ec4449e341d535fefa6f4'
 from bs4 import BeautifulSoup
 import nltk   
 import urllib.request
+import requests
 import logging
 logging.basicConfig(filename='analyze.log',level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -27,25 +28,15 @@ def emotionUrl(url):
     text = ' '.join(raw.split())
     return emotion(text)
 
+def getContent(url):
+    print('[getContent] url:', url)
+    s = requests.Session()
+    r = s.get(url)
+    content = r.content.decode('utf8').replace('"', '')
+    logger.info('[getContent] content:')
+    logger.info(content)
+    return content
+
 if __name__ == "__main__":
-    # single example
-    res = indicoio.sentiment("I love writing code!")
-    print(res)
-
-    # batch example
-    res = indicoio.sentiment([
-        "I love writing code!",
-        "Alexander and the Terrible, Horrible, No Good, Very Bad Day"
-    ])
-    print(res)
-
-    # single example
-    res = indicoio.emotion("I did it. I got into Grad School. Not just any program, but a GREAT program. :-)")
-    print(res)
-
-    # batch example
-    res = indicoio.emotion([
-        "I did it. I got into Grad School. Not just any program, but a GREAT program. :-)",
-        "Like seriously my life is bleak, I have been unemployed for almost a year."
-    ])
-    print(res)
+    url = 'https://www.yahoo.com'
+    print(getContent(url))
