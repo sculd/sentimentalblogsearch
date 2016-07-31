@@ -52,7 +52,7 @@ def getContent(url):
     tag_removed = ' '.join(tag_removed.split())
     
     logger.info('[getContent] content:')
-    logger.info(no_newline_tab)
+    logger.info(tag_removed)
     return tag_removed
 
 if __name__ == "__main__":
