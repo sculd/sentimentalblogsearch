@@ -6,17 +6,38 @@ var ANALYZER_URL = '/analyzesentiment/analyzeurl/';
 // Selectors
 var SELECTOR_KEYWORD_INPUT = '#keyword';
 
-var NUM_PER_SEARCH = 3;
+var NUM_PER_SEARCH = 6;
 var page = 1;
 var isDuringUpdate = false;
 var ITEM_CSS_CLASS = 'thumbnail row col-xs-10 col-xs-offset-1';
 
 var onSearchResponse = function(response) {
+	var getIconHtml = function(name, score) {
+		var em = 0.70 + 0.3 + parseFloat(score) * 2.0;
+		var opacity = 0.4 + parseFloat(score) * 0.6;
+		var fontColor = 'black'
+		if (name === 'Sad') {
+			fontColor = 'blue';
+		} else if (name === 'Joyful') {
+			fontColor = 'green';
+		} else if (name === 'Angry') {
+			fontColor = 'red';
+		} else if (name === 'Surprised') {
+			fontColor = 'black';
+		} else if (name === 'Fearful') {
+			fontColor = 'purple';
+		}
+		return '<span style="opacity: ' + opacity + ';"><span style="color:' + fontColor + '; font-size: ' + em + 'em; margin: 6px 0px;">' + name + '</span>' +
+			   '<span style="display:inline-block; margin-left: 10px;"></span>' + '</span>';
+
+	}
+
 	var i = 0;
 	// for loop stalls the layout update so this is the right practice
 	var process = function() {
 		if (i === response.items.length) {
 			isDuringUpdate = false;
+			$('.spin').hide();
 			return;
 		}
 
@@ -24,7 +45,7 @@ var onSearchResponse = function(response) {
 		i++;
 		// in production code, item.htmlTitle should have the HTML entities escaped.
 		var div = $('<div></div>');
-		div.html('<a href="' + item.link + '">' + item.htmlTitle + '</a>');
+		div.html('<p class="lead"> <a href="' + item.link + '"> ' + item.htmlTitle + '</a></p>');
 		/*
 		var parser = new DOMParser()
 		$.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent(item.link) + '&callback=?', 
@@ -38,16 +59,19 @@ var onSearchResponse = function(response) {
 			data: {url: item.link} // item.htmlSnippet
 		});
 		div.append('<blockquote><p>' + item.htmlSnippet + '</p></blockquote>');
-		div.append('<p>' + JSON.stringify(JSON.parse(JSON.stringify(res.responseJSON)),null,2) + '</p>');
+		//div.append('<p>' + JSON.stringify(JSON.parse(JSON.stringify(res.responseJSON)),null,2) + '</p>');
+		div.append(getIconHtml('Sad', res.responseJSON['sadness']));
+		div.append(getIconHtml('Joyful', res.responseJSON['joy']));
+		div.append(getIconHtml('Angry', res.responseJSON['anger']));
+		div.append(getIconHtml('Surprised', res.responseJSON['surprise']));
+		div.append(getIconHtml('Fearful', res.responseJSON['fear']));
+		// sadness, joy, anger, surprise, fear
 
 		var contentDiv = $('<div>')
 		//var content = $.get('/analyzesentiment/urlContent?url=' + item.link)
 		//contentDiv.append(content);
 		div.append(contentDiv)
 
-		//div.append('<p><a class="various" data-fancybox-type="iframe" href="' + item.link + '">Iframe</a></p>');
-		//div.append('<p><a class="various fancybox.iframe" href="http://www.yahoo.com">yahoo</a></p>');
-		
 		div.addClass(ITEM_CSS_CLASS);
 		$('#content').append(div);
 		setTimeout(process, 0);
@@ -75,6 +99,7 @@ var search = function(keyword) {
 		start: page,
 	};
 	var res = $.get(GOOGLE_SEARCH_URL, param, onSearchResponse);
+	$('.spin').show();
 	console.log(res);
 };
 

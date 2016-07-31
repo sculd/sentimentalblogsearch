@@ -1,6 +1,6 @@
 #title {
 	text-align: center;
-	font-size: 64px;
+	font-size: 48px;
 	font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
 
@@ -36,6 +36,11 @@ input:-webkit-autofill:active {
 
 .thumbnail {
   
+}
+
+.spin {
+  height: 75px;
+  display: none;
 }
 
 .footer {

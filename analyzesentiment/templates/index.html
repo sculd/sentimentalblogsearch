@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <script src="/static/js/jquery-3.1.0.min.js"></script>
+        <script src="/static/js/jquery.spin.js"></script>
         <script src="/static/js/search.js"></script>
+        <link rel="stylesheet" href="/static/css/jquery.spin.css">
         <link rel="stylesheet" href="/static/css/search.css">
 
         <!-- Bootstrap -->
@@ -15,13 +17,13 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
-        <title>Blog Search</title>
+        <title>sentiment search</title>
     </head>
 
     <body>
         <div>
             <div>
-                <div class="row title col-xs-6 col-xs-offset-3 text-center"><h1 id="title">blog search</h1></div>
+                <div class="row title col-xs-6 col-xs-offset-3 text-center"><h1 id="title">search by sentiment</h1></div>
                 <div id="search-container">
                     <div class="row search-label text-center lead col-xs-4 col-xs-offset-4">search wordpress</div>
                     <div class="row col-xs-8 col-xs-offset-2">
@@ -32,9 +34,10 @@
             </div>
         </div>
 
+        <div class="row"><p></p></div>
         <div id="content"></div>
 
-
+        <div class="spin col-xs-2 col-xs-offset-5 text-center" data-spin />
         <footer class="footer">
           <div class="container text-right" style="margin-top: 5px;">
             <p class="text-muted"><a href="https://www.linkedin.com/in/hjunlim">By Hyungjun Lim</a></p>
