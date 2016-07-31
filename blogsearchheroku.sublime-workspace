@@ -83,7 +83,7 @@
 			"file": "analyzesentiment/static/js/search.js",
 			"settings":
 			{
-				"buffer_size": 3834,
+				"buffer_size": 4962,
 				"line_ending": "Unix"
 			}
 		},
@@ -453,7 +453,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -628,15 +628,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3834,
+						"buffer_size": 4962,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1960,
-								1960
+								3916,
+								3916
 							]
 						],
 						"settings":
@@ -649,10 +649,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1216.0,
+						"translation.y": 1412.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -683,10 +683,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 181.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
