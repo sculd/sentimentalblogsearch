@@ -23,11 +23,16 @@ def emotionUrl(url):
     url = str(url)
     print('[emotionUrl] url:', url)
     logger.info('[emotionUrl] url: ' + url)
+    text = getContent(url)
+    return emotion(text)
+
+def _getContentBS(url):
+    url = str(url)
     html_str = urllib.request.urlopen(url).read()
     soup = BeautifulSoup(html_str, 'html.parser')
     raw = soup.get_text()
     text = ' '.join(raw.split())
-    return emotion(text)
+    return text
 
 def getContent(url):
     print('[getContent] url:', url)
@@ -44,6 +49,7 @@ def getContent(url):
     space_corrected = no_newline_tab.replace(u'\xa0', ' ')
     form_removed = re.sub(r'<(form).*?</\1>(?s)', '', space_corrected)
     tag_removed = re.compile(r'<.*?>').sub('', form_removed)
+    tag_removed = ' '.join(tag_removed.split())
     
     logger.info('[getContent] content:')
     logger.info(no_newline_tab)
