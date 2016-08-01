@@ -83,7 +83,7 @@
 			"file": "analyzesentiment/static/js/search.js",
 			"settings":
 			{
-				"buffer_size": 4962,
+				"buffer_size": 4871,
 				"line_ending": "Unix"
 			}
 		},
@@ -628,15 +628,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4962,
+						"buffer_size": 4871,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3916,
-								3916
+								3905,
+								3905
 							]
 						],
 						"settings":
@@ -649,7 +649,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1412.0,
+						"translation.y": 1370.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

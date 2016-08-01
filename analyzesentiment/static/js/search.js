@@ -8,6 +8,7 @@ var SELECTOR_KEYWORD_INPUT = '#keyword';
 
 var NUM_PER_SEARCH = 6;
 var page = 1;
+var searchSequence = 1;
 var isDuringUpdate = false;
 var ITEM_CSS_CLASS = 'thumbnail row col-xs-10 col-xs-offset-1';
 var keyword;
@@ -30,6 +31,11 @@ var onAnalyze = function(responseJSON) {
 		}
 		return '<span style="opacity: ' + opacity + ';"><span style="color:' + fontColor + '; font-size: ' + em + 'em; margin: 6px 0px;">' + name + '</span>' +
 			   '<span style="display:inline-block; margin-left: 10px;"></span>' + '</span>';
+	}
+
+	if (searchSequence > this.indexValue.searchSequence) {
+		// it means a new keyword has been typed in, so discard the response from old keyword
+		return;
 	}
 
 	var div = $('<div></div>');
@@ -77,7 +83,7 @@ var onSearchResponse = function(response) {
 		var res = $.ajax({
 			type: 'GET', 
 			url: ANALYZER_URL, 
-			indexValue: {url: item.link, title: item.htmlTitle, snippet: item.htmlSnippet},
+			indexValue: {url: item.link, title: item.htmlTitle, snippet: item.htmlSnippet, searchSequence: searchSequence},
 			data: {url: item.link, title: item.htmlTitle, snippet: item.htmlSnippet}, // item.htmlSnippet
 			success: onAnalyze,
 		});
@@ -126,6 +132,7 @@ var search = function(a_keyword) {
 
 	$('#content').html('');
 
+	searchSequence += 1;
 	nextPage();
 };
 
